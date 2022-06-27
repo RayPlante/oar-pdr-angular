@@ -37,9 +37,6 @@
         "midas-author": {
             "projectType": "application",
             "schematics": {
-                "@schematics/angular:component": {
-                    "style": "scss"
-                },
                 "@schematics/angular:application": {
                     "strict": true
                 }
@@ -56,15 +53,25 @@
                         "main": "midas-author/src/main.ts",
                         "polyfills": "midas-author/src/polyfills.ts",
                         "tsConfig": "midas-author/tsconfig.app.json",
-                        "inlineStyleLanguage": "scss",
                         "assets": [
                             "midas-author/src/favicon.ico",
                             "midas-author/src/assets"
                         ],
                         "styles": [
-                            "midas-author/src/styles.scss"
+                            "node_modules/bootstrap/dist/css/bootstrap.css",
+                            "node_modules/primeng/resources/primeng.css",
+                            "node_modules/primeicons/primeicons.css",
+                            "node_modules/primeflex/primeflex.css",
+                            "node_modules/primeng/resources/themes/saga-blue/theme.css",
+                            "angular-archwizard/archwizard.css",
+                            "angular-archwizard/archwizard.scss",
+                            "lib/libs/oarng/src/styles/font-awesome/css/font-awesome.min.css",
+                            "lib/libs/oarng/src/styles/main.css",
+                            "midas-author/src/styles.css"
                         ],
-                        "scripts": []
+                        "scripts": [
+                            "node_modules/bootstrap/dist/js/bootstrap.js"
+                        ]
                     },
                     "configurations": {
                         "production": {
@@ -124,13 +131,12 @@
                         "polyfills": "midas-author/src/polyfills.ts",
                         "tsConfig": "midas-author/tsconfig.spec.json",
                         "karmaConfig": "midas-author/karma.conf.js",
-                        "inlineStyleLanguage": "scss",
                         "assets": [
                             "midas-author/src/favicon.ico",
                             "midas-author/src/assets"
                         ],
                         "styles": [
-                            "midas-author/src/styles.scss"
+                            "midas-author/src/styles.css"
                         ],
                         "scripts": []
                     }
